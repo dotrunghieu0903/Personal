@@ -1,0 +1,118 @@
+public class DienVien{
+	int maDienVien;
+	String tenDienVien;
+	String ngheDanh;
+	bool gioiTinh;
+	Date ngaySinh;
+	int maSoThue;
+	double tienPhaiTra;
+	enum loaiDienVien{hangA,hangB,hangC}
+	loaiDienVien dv;
+	
+	
+	enum ghiChu{canhNong,canhNguyHiem}
+	ghiChu gc;
+	
+	DienVien{
+		
+	}
+	
+}
+public class DienVien1:public DienVien{
+	DienVien1 dv1=new DienVien1();
+	public static final double luong=80;
+	public double TinhLuong1(){
+		if(dv1.loaiDienVien="hangA")
+		{
+			return dv1.tienPhaiTra=luong*1.5;
+		}
+		else if(dv1.loaiDienVien="hangB")
+		{
+			return dv1.tienPhaiTra=luong*1;
+		}
+		
+		else{
+			return dv1.tienPhaiTra=luong*0.7
+		}
+		
+	}
+	public void TinhLuong2(){
+		if(dv1.gc="canhNong")
+		{
+			dv1.tienPhaiTra=dv1.TinhLuong1+2;
+		}
+		else if(dv1.gc="canhNguyHiem")
+		{
+			dv1.tienPhaiTra=dv1.TinhLuong1+3;
+		}
+		
+		else{
+			dv1.tienPhaiTra=dv1.TinhLuong1+5;
+		}
+		
+	}
+}
+
+public class DienVien2:public DienVien{
+	DienVien2 dv2=new DienVien2();
+	public static final double luong=50;
+	public double TinhLuong1(){
+		if(dv2.loaiDienVien="hangA")
+		{
+			return dv2.tienPhaiTra=luong*1.5;
+		}
+		else if(dv2.loaiDienVien="hangB")
+		{
+			return dv2.tienPhaiTra=luong*1;
+		}
+		
+		else{
+			return dv2.tienPhaiTra=luong*0.7
+		}
+		
+	}
+	public void TinhLuong2(){
+		if(dv2.gc="canhNong")
+		{
+			dv2.tienPhaiTra=dv2.TinhLuong1+2;
+		}
+		else if(dv2.gc="canhNguyHiem")
+		{
+			dv2.tienPhaiTra=dv2.TinhLuong1+3;
+		}
+		
+		else{
+			dv2.tienPhaiTra=dv2.TinhLuong1+5;
+		}
+		
+	}
+}
+
+
+public class DienVienThuong: public DienVien{
+	int soPhut;
+	DienVienThuong dvt=new DienVienThuong();
+	public void Xuat(){
+			public double TinhLuong1(){
+			
+			return dvt.tienPhaiTra=dvt.soPhut*0.2;
+			
+			
+			}
+			public void TinhLuong2(){
+			if(dvt.gc="canhNong")
+			{
+				dvt.tienPhaiTra=dvt.TinhLuong1+2;
+			}
+			else if(dvt.gc="canhNguyHiem")
+			{
+				dvt.tienPhaiTra=dvt.TinhLuong1+3;
+			}
+			
+			else{
+				dvt.tienPhaiTra=dvt.TinhLuong1+5;
+			}
+			
+		}
+	}
+}
