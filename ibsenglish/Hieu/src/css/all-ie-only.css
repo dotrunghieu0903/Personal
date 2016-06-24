@@ -1,0 +1,150 @@
+/*---For IE 10 and higher---*/
+/*------------------Ver PC-------------------*/
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /*Set up font-family*/
+@font-face {
+    font-family: "Avenir Font";
+    src: url('../Font/Avenir/Avenir-Book.eot') format("truetype");
+    src: local('☺'), url('../Font/Avenir/Avenir-Book.woff') format('woff'), 
+                     url('../Font/Avenir/Avenir-Book.ttf') format('truetype'),
+                     url('../Font/Avenir/Avenir-Book.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Font Regular*/
+@font-face {
+    font-family: "Regular Font";
+    src: url('../Font/Avenir/AvenirNext-Regular.eot') format("truetype");
+    src:local('☺'), url('../Font/Avenir/AvenirNext-Regular.woff') format('woff'),
+                     url('../Font/Avenir/AvenirNext-Regular.ttf') format('truetype'),
+                     url('../Font/Avenir/AvenirNext-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Font UltraLight*/
+@font-face {
+    font-family: "UltraLight Font";
+    src: url('../Font/Avenir/AvenirNext-UltraLight.eot') format("truetype");
+    src: local('☺'), url('../Font/Avenir/AvenirNext-UltraLight.woff') format('woff'),
+                     url('../Font/Avenir/AvenirNext-UltraLight.ttf') format('truetype'),
+                     url('../Font/Avenir/AvenirNext-UltraLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*Font DemiBold*/
+@font-face {
+    font-family: "DemiBold Font";
+    src: url('../Font/Avenir/AvenirNext-DemiBold.eot') format("truetype");
+    src: local('☺'), url('../Font/Avenir/AvenirNext-DemiBold.woff') format('woff'),
+                     url('../Font/Avenir/AvenirNext-DemiBold.ttf') format('truetype'),
+                     url('../Font/Avenir/AvenirNext-DemiBold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Futura Font";
+  src: url('../Font/Futura/Futura-SC-T-OT-Book_19037.eot');
+  src:local('☺'), url('../Font/Futura/Futura-SC-T-OT-Book_19037.woff') format('woff'),
+                   url('../Font/Futura/Futura-SC-T-OT-Book_19037.ttf') format('truetype'),
+                   url('../Font/Futura/Futura-SC-T-OT-Book_19037.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura Font";
+  src: url('../Font/Futura/Futura_ICG_Book_Oblique.eot');
+  src: local('☺'), url('../Font/Futura/sFutura_ICG_Book_Oblique.woff') format('woff'),
+                   url('../Font/Futura/Futura_ICG_Book_Oblique.ttf') format('truetype'),
+                   url('../Font/Futura/Futura_ICG_Book_Oblique.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Futura Font";
+  src: url('../Font/Futura/Futura-T-OT-Book_19064.eot');
+  src: local('☺'), url('../Font/Futura/Futura-T-OT-Book_19064.woff') format('woff'),
+                   url('../Font/Futura/Futura-T-OT-Book_19064.ttf') format('truetype'),
+                   url('../Font/Futura/Futura-T-OT-Book_19064.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: "Futura Font";
+    src: url('../Font/Futura Font-webfont.eot');
+    src: url('../Font/Futura Font-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../Font/Futura Font-webfont.woff') format('woff'),
+         url('../Font/Futura Font-webfont.ttf') format('truetype'),
+         url('../Font/Futura Font-webfonts.svg#Futura Font') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*  html,body{
+    height: 100%;
+    font-family: "Futura Font","Avenir Font","Regular Font","UltraLight Font","DemiBold Font",Sans-Serif;
+  }*/
+  /*body {
+  font: 20px Montserrat, sans-serif;s
+  line-height: 1.8;
+  color: #f5f6f7;
+}*/
+/*------------------Banner-------------------*/
+  .banner {
+    position: relative;
+    height: 770px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/ibs_eng.png');
+    background-repeat: no-repeat;
+}
+/*-------------About us-------------------*/
+div.imgabout {
+    position: relative;
+    height: 450px;
+    width: 100% !important;
+    background-size: cover;
+    background-image: url('../img/aboutus.jpg');
+    background-repeat: no-repeat;
+    top: -40px;
+}
+.aboutusie{
+  max-height: 750px;
+}
+/*---------------Our service---------------*/
+div.ourservice1{
+  height: 700px !important;
+}
+div.imgIntro1{
+      height: 300px;
+    }
+    div.imgIntro2{
+       height: 300px;
+    }
+    div.imgIntro3{
+      height: 300px;
+    }
+    div.imgIntro4{
+       height: 300px;
+    }
+    div.imgIntro5{
+        height: 300px;
+    }
+
+/*---------------Our work------------------*/
+
+div.ourWork1{
+  height: 700px !important;
+}
+
+/*---------------Partnership---------------*/
+.partnership1{
+    margin-top: 7%;
+ }
+ /*------------Globalteam----------------*/
+ div.globalteam1{
+      height: 690px !important;
+  }
+}

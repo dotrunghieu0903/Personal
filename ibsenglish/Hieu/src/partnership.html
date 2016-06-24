@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>IBS English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/mycss.css" type="text/css">
+    <link rel="stylesheet" id="font-awesome-css" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" media="screen">
+
+    <!-- <link rel="stylesheet" href="css/page_IBSglobal.css" type="text/css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" /></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/></script>
+    <script src="js/scrolltop.js"></script>
+
+    <script>
+    $(document).ready(function(){
+
+        var headerHeight = $("#header").height();
+
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip(); 
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Prevent default anchor click behavior
+            // event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({scrollTop: $(hash).offset().top - headerHeight}, 900, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+                //$('html').animate({ 'scrollTop': $(hash).offset().top - headerHeight}, 0);
+                window.location.hash = hash;
+            });
+        });
+    });
+    </script>
+
+    <script type="text/javascript">
+    $(function() {
+        $('.nav a').on('click', function(){ 
+            if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-toggle").trigger( "click" );
+            }
+        });
+    });  
+    </script>
+
+    <script type="text/javascript">
+    $(document).on('click', '.navbar-nav li', function() {
+        $(".navbar-nav li").removeClass("active");
+        $(this).addClass("active");
+    });
+    </script>
+<!-- Demo loader -->
+
+    <style type="text/css">
+    #overlay{
+      position:fixed;
+      z-index:99999;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      background:rgba(0,0,0,0.9);
+      transition: 1s 0.4s;
+    }
+    #progstat{
+      font-size:0.7em;
+      letter-spacing: 3px;
+      position:absolute;
+      top:50%;
+      margin-top:-40px;
+      width:100%;
+      text-align:center;
+      color:#fff;
+    }
+    #progress{
+      height:1px;
+      background:#fff;
+      position:absolute;
+      width:0;
+      top:50%;
+    }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!-- "To The Top" Button -->
+    <div class="scroll-top-wrapper">
+        <span class="scroll-top-inner">
+            <i class="fa fa-chevron-circle-up fa-2x"></i>
+        </span>
+    </div> 
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="header">
+        <div class="navbar-header">
+            <a class="navbar-brand page-scroll logopic" href="index.html"><img src="./img/Logo.PNG" alt=""></a>
+            <a class="navbar-brand page-scroll" href="#page-top"></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="#section_our_services">ABOUT US</a></li>
+                <li><a class="page-scroll" href="#section_our_work">OUR SERVICES</a></li>
+                <li><a class="page-scroll" href="#section_global_team">OUR WORK</a></li>
+                <li><a class="page-scroll" href="#section_about_us">GLOBAL TEAM</a></li>
+                <li class="btn-mypage">
+                    <a href="#section_partnership" class="page-scroll btn-mypage">PARTNERSHIP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="div-seperator" ></div>
+    <br>
+    <div class="container-fluid" id="section_partnership">    
+        <div class="text_info" style="padding-bottom: 10px">
+            <h1 class="section-heading">START PARTNERS SHIP</h1>
+            <p class="message">Intelligence Business Solutions provides software development service and<br> IT outsourcing service in the world. We have 100 business/IT consultant,<br>800 software developer and 1200 IT outsourcing staff</p>
+        </div>
+    </div>
+
+</body>
+
+<!-- Footer -->
+<footer class="container-fluid">
+    <div class="row col-md-12 col-xs-12 text-center container staff1">
+        <p class="partner">© 2016 Intelligence Business Solutions.</p>
+    </div>
+</footer>
+
+</html>

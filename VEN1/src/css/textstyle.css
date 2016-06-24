@@ -1,0 +1,35 @@
+a {
+	text-decoration: none;
+}
+
+#header{
+	background-color: #2D2D85;
+	border-bottom-style: solid;
+	border-bottom-color: yellowgreen;
+}
+
+
+#footer{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:50px;
+	width:100%;
+	background:#F5F5F5;
+	border-top-style: solid;
+	border-top-color: #D2D3F1;
+	text-align:center;
+	
+}
+
+.minh{
+	vertical-align:middle;
+	font-family: "Meiryo UI";
+}
+
+#btnarea{
+	vertical-align:middle;
+	margin-top: 60px;
+}
+
+   

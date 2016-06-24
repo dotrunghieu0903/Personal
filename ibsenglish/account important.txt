@@ -1,0 +1,4 @@
+FTP account (port 21): 
+Host: 103.238.215.38
+User: ftp_ibsvietnam 
+Pass: gizmFx1qKeJ

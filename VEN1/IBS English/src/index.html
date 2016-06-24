@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>IBS English</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="css/creative.css" type="text/css"> -->
+    <link rel="stylesheet" href="css/mycss.css" type="text/css">
+    <link rel="stylesheet" id="font-awesome-css" href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" type="text/css" media="screen">
+
+    <!-- <link rel="stylesheet" href="css/page_IBSglobal.css" type="text/css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" /></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"/></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?sensor=false" type="text/javascript"/></script>
+    <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+   <!--  <script type="text/javascript" src="js/global.js"></script> -->
+    <script src="js/scrolltop.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            var headerHeight = $("#header").height();
+
+        // Initialize Tooltip
+        $('[data-toggle="tooltip"]').tooltip(); 
+
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+            // Prevent default anchor click behavior
+            // event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({scrollTop: $(hash).offset().top - headerHeight}, 900, function(){
+
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                //window.location.hash = hash;
+                //$('html').animate({ 'scrollTop': $(hash).offset().top - headerHeight}, 0);
+                window.location.hash = hash;
+            });
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(function() {
+        $('.nav a').on('click', function(){ 
+            if($('.navbar-toggle').css('display') !='none'){
+                $(".navbar-toggle").trigger( "click" );
+            }
+        });
+    });  
+</script>
+
+<script type="text/javascript">
+    $(document).on('click', '.navbar-nav li', function() {
+        $(".navbar-nav li").removeClass("active");
+        $(this).addClass("active");
+    });
+</script>
+
+<!-- Demo loader -->
+
+<style type="text/css">
+    #overlay{
+      position:fixed;
+      z-index:99999;
+      top:0;
+      left:0;
+      bottom:0;
+      right:0;
+      background:rgba(0,0,0,0.9);
+      transition: 1s 0.4s;
+  }
+  #progstat{
+      font-size:0.7em;
+      letter-spacing: 3px;
+      position:absolute;
+      top:50%;
+      margin-top:-40px;
+      width:100%;
+      text-align:center;
+      color:#fff;
+  }
+  #progress{
+      height:1px;
+      background:#fff;
+      position:absolute;
+      width:0;
+      top:50%;
+  }
+</style>
+
+<script type="text/javascript">
+    (function(){
+      function id(v){return document.getElementById(v); }
+      function loadbar() {
+        var ovrl = id("overlay"),
+        prog = id("progress"),
+        stat = id("progstat"),
+        img = document.images,
+        c = 0;
+        tot = img.length;
+
+        function imgLoaded(){
+          // c += 1;
+          // var perc = ((100/tot*c) << 0) +"%";
+          // prog.style.width = perc;
+          // stat.innerHTML = "Loading "+ perc;
+          // if(c===tot) return doneLoading();
+
+          $({countNum: $('#counter').text()}).animate({countNum: 120}, {
+            duration: 4000,
+            easing:'linear',
+            step: function() {
+             $('#counter').text(Math.floor(this.countNum));
+         },
+         complete: function() {
+             $('#counter').text(this.countNum);
+             
+         }
+     });
+          
+          $({countNum1: $('#counter1').text()}).animate({countNum1: 2980}, {
+            duration: 4000,
+            easing:'linear',
+            step: function() {
+             $('#counter1').text(Math.floor(this.countNum1));
+         },
+         complete: function() {
+             $('#counter1').text(this.countNum1);
+             
+         }
+     });
+          setTimeout(doneLoading, 1000);
+      } 
+
+      function doneLoading(){
+          ovrl.style.opacity = 0;
+          setTimeout(function(){ 
+            ovrl.style.display = "none";
+        }, 1000);
+      }
+      for(var i=0; i<tot; i++) {
+          var tImg     = new Image();
+          tImg.onload  = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src     = img[i].src;
+      }    
+  }
+  document.addEventListener('DOMContentLoaded', loadbar, false);
+}());
+</script>
+
+<!-- Pop-up Content 
+    <style type="text/css">
+        .open-popup {padding:20px}
+        .white-popup {
+          position: relative;
+          background: #FFF;
+          padding: 40px;
+          width: auto;
+          max-width: 200px;
+          margin: 20px auto;
+          text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+    $('#open-popup').magnificPopup({
+        items: [
+          {
+            src: '<div class="white-popup">Popup from HTML string</div>', // HTML string
+            type: 'inline'
+          }
+        ],
+        gallery: {
+          enabled: true
+        },
+        type: 'image' // this is a default type
+    });
+    </script>
+-->
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" >
+
+    <!-- "To The Top" Button -->
+    <div class="scroll-top-wrapper">
+        <span class="scroll-top-inner">
+            <i class="fa fa-chevron-circle-up fa-2x"></i>
+        </span>
+    </div> 
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="header">
+        <div class="navbar-header">
+            <a class="navbar-brand page-scroll logopic" href="#"><img src="./img/Logo.PNG" alt=""></a>
+            <a class="navbar-brand page-scroll" href="#page-top"></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="page-scroll" href="#section_our_services">OUR SERVICES</a></li>
+                <li><a class="page-scroll" href="#section_our_work">OUR WORK</a></li>
+                <li><a class="page-scroll" href="#section_global_team">GLOBAL TEAM</a></li>
+                <li><a class="page-scroll" href="#section_about_us">ABOUT US</a></li>
+                <li class="btn-mypage">
+                    <a href="partnership.html" target="_blank" class="btn-mypage">PARTNERSHIP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+   <!--  <div id="overlay">
+        <div id="progstat"></div>
+        <div class="testIntro">
+            <div class="testIntro-Text">
+                <h1 style="margin-left: 15%;"><span id="counter1">0</span> Employees</h1>              
+                <h4 style="font-size: 20px; text-align: center;">Software Development and IT Outsourcing</h4>
+                <h1 style="text-align: right; margin-right: 20%;"><span id="counter">0</span> Active Projects</h1>
+            </div>
+        </div>
+        <div id="progress"></div>
+    </div> -->
+
+    <!-- First Container -->
+    <div class="container-fluid" style="padding-top: 40px">
+        <div class="banner">
+            <div class="banner-text">
+                <!-- <div class="row"><h1>2980</h1> <h2>Employees</h2></div>    -->   
+                <h1>2980 Employees</h1>              
+                <h4 style="font-size: 20px; text-align: center;">Software Development and IT Outsourcing</h4>
+                <h1 style="text-align: right; ">120 Active Projects</h1>
+            </div>
+        </div>
+
+        <div class="text_info">
+            <h1 class="section-heading">MESSAGE</h1>
+            <p class="message">Intelligence Business Solutions provides software development service and IT outsourcing service in the world. We have 100 business/IT consultant, 800 software developer and 1,200 IT outsourcing staff</p>
+        </div>
+
+        <div class="container staff">
+            <div class="row staff">
+
+                <div class="col-md-3 col-lg-3 center">
+                    <img src="./img/photo-circle.PNG" class="side_photo">
+                    <div class="footer_text">
+                        <h1>Yoshihito Satoyoshi</h1>
+                        <p>DIRECTOR</p>
+                    </div>
+                    <div class="mytext">
+                        <p>Intelligence Business Solutions provides software development service and IT outsourcing service in the world...</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 center">
+                    <img src="./img/photo-circle.PNG" class="side_photo">
+                    <div class="footer_text">
+                        <h1>Yoshihito Satoyoshi</h1>
+                        <p>DIRECTOR</p>
+                    </div>
+                    <div class="mytext">
+                        <p>Intelligence Business Solutions provides software development service and IT outsourcing service in the world...</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3 center">
+                    <img src="./img/photo-circle.PNG" class="side_photo">
+                    <div class="footer_text">
+                        <h1>Yoshihito Satoyoshi</h1>
+                        <p>DIRECTOR</p>
+                    </div>
+                    <div class="mytext">
+                        <p>Intelligence Business Solutions provides software development service and IT outsourcing service in the world...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Second Container -->
+    <div class="container-fluid" id="section_our_services">
+        <div class="text_info">
+            <h1 class="section-heading">OUR SERVICES</h1>
+            <p class="message">Intelligence Business Solutions provides software development service and IT outsourcing service in the world. We have 100 business/IT consultant, 800 software developer and 1,200 IT outsourcing staff</p>
+        </div>
+
+        <div class="container1">
+            <div class="row">
+                <div class="col-md-4 no-padding">
+                    <a href="#" class="portfolio-box">
+                        <img src="./img/image.jpg" alt="" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <p>BUSINESS APPLICATIONS & ENTERPRISE SYSTEMS DEVELOPMENT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 no-padding" >
+                    <a href="#" class="portfolio-box">
+                        <img src="./img/image.jpg" alt="" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <p>WEB / MOBILE APPLICATIONS DEVELOPMENT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 no-padding" >
+                    <a href="#" class="portfolio-box">
+                        <img src="./img/image.jpg" alt="" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <p>DEDICATED TEAMS & OFFSHORE STAFFING</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row padding-top ">
+                <div class="col-md-4 no-padding">
+                    <a href="#" class="portfolio-box">
+                        <img src="./img/image.jpg" alt="" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <p>WEB / MOBILE APPLICATIONS DEVELOPMENT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 no-padding" >
+                    <a href="#" class="portfolio-box">
+                        <img src="./img/image.jpg" alt="" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <p>DEDICATED TEAMS & OFFSHORE STAFFING</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 no-padding" >
+                    <a href="#" class="portfolio-box">
+                        <img src="./img/image.jpg" alt="" class="img-responsive">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-name">
+                                    <p>BUSINESS APPLICATIONS & ENTERPRISE SYSTEMS DEVELOPMENT</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <center>
+                <input type="button" class="btn-entry2" value="Start Partnership With Us" >
+            </center>
+        </div>
+    </div> 
+
+    <!-- Third Container (Grid) -->
+<div class="container-fluid" id="section_global_team">    
+        <div class="text_info">
+            <h1 class="section-heading">GLOBAL TEAM</h1>
+            <p class="message">Intelligence Business Solutions provides software development service and IT outsourcing service in the world. We have 100 business/IT consultant,  800 software developer and 1,200 IT outsourcing staff</p>
+        </div>
+       
+      <script type="text/javascript">
+//          $(document).ready(function() {
+//         function init(){
+//             var x=document.getElementById("#container1");
+//             // x.g
+//             // var pos1=$("#point1").offset();
+//             // img1.css({
+//             //   "top":pos1+50%(x.height)
+//             //     "left":pos1+35%(x.width)
+                 
+//             // });
+//             alert($("container1").width());
+//           }
+//           window.onload=init();
+// });
+$(document).ready(function(){
+    $("button").click(function(){
+        alert( $("#map").offset().top);
+         alert( $("#map").offset().left);
+    });
+});
+      </script>
+
+<button>Display the width of div</button>
+
+		<!-- <div id="container1">
+  			<div id="img1"></div>
+  			<div id="stuff1"><img src="./img/img-Nagai.png" style="height:50px;width:50px;"/>
+  							Toshihito Nagai
+                Intelligence Business Solutions, Ltd.
+                Managing Director, IBS group CEO
+  			</div>
+        <div id="img2"></div>
+        <div id="stuff2"><img src="./img/photo-circle.png" style="height:50px;width:50px;"/>
+                Yoshihito Satoyoshi
+                Intelligence Business Solutions Vietnam Co., Ltd.
+                General Director
+        </div>
+        <div id="img3"></div>
+        <div id="stuff3"><img src="./img/photo-circle.png" style="height:50px;width:50px;"/>
+                Yoshihito Satoyoshi
+                Intelligence Business Solutions Vietnam Co., Ltd.
+                General Director
+        </div> 
+    </div> -->
+
+      <div id="map">
+          <div id="point1"></div>
+          <div id="stuff1"><img src="./img/img-Nagai.png" style="height:50px;width:50px;"/>
+              Toshihito Nagai
+              Intelligence Business Solutions, Ltd.
+              Managing Director, IBS group CEO
+          </div>
+          <div id="point2"></div>
+          <div id="stuff2"><img src="./img/img-Tsuboi.png" style="height:50px;width:50px;"/>
+            Shingo Tsuboi
+            IBS Global Bridge, Ltd.
+            Managing Director
+          </div>
+          <div id="point3"></div>
+          <div id="stuff3"><img src="./img/photo-circle.png" style="height:50px;width:50px;"/>
+            Yoshihito Satoyoshi
+            Intelligence Business Solutions Vietnam Co., Ltd.
+            General Director
+          </div>
+      </div>
+</div>
+   
+          
+          <!-- <div style="margin-top:350px;">
+              <h5 style="color: #797979; text-align: center !important;">Our own software development office</h5>
+              <h6 style="color: black; text-align: center !important; margin: auto;  padding-right: 10px;"> Tokyo</h6>
+              <h6 style="color: black; text-align: center !important; margin: auto;  padding-right: 10px;"> Okinawa</h6>
+              <h6 style="color: black; text-align: center !important; margin: auto;  padding-right: 10px;"> Ho-Chi-Minh</h6>
+          </div> -->
+          
+       <!--  <div><img class="img-responsive" src="./img/ibs_eng_globalteamvl.jpg" >
+        <div id="img1"></div>
+    </div> -->
+
+    <!-- Fourth Container (Grid) -->
+    <div class="div-seperator" ></div>
+    <div class="container-fluid" id="section_our_work">    
+        <div class="text_info" style="padding-bottom: 10px">
+            <h1 class="section-heading">OUR WORK</h1>
+        </div>
+        <div class="row no-padding">
+            <div class="col-md-12 no-padding">
+                <a href="" class="open-popup">
+                    <img src="./img/construction.jpg" style="width: 100%; height: auto;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fifth Container (Grid) -->
+    <div class="div-seperator" ></div>
+
+    <div class="container-fluid" id="section_about_us">    
+        <div class="text_info" style="padding-bottom: 10px">
+            <h1 class="section-heading">ABOUT US</h1>
+        </div>
+        <div class="row no-padding">
+            <div class="col-md-12 no-padding">
+                <img src="./img/construction.jpg" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 text-center">
+            <br/>
+            <p>インテリジェンス ビジネスソリューションズ<br/>
+                新卒採用グループ <br/>
+                〒135-0061 東京都江東区豊洲3-2-70 豊洲フロント7F <br/>
+                TEL 0120-558-920（受付時間：平日9：00～18：00） <br/>
+            </p>
+        </div>
+
+        <div class="col-md-4 col-lg-4 text-center">
+            <br/>
+            <a href="http://www.ibs.inte.co.jp/fresh/" target="_blank">
+                <img src="./img/left.png" width="250px" height="66px">
+            </a>
+            <p>新卒採用ホームページ</p>
+        </div>
+
+        <div class="col-md-4 col-lg-4 text-center">
+            <br/>
+            <a href="http://www.ibs.inte.co.jp/fresh-blog/" target="_blank">
+                <img src="./img/right.jpg" width="250px" height="66px">
+            </a>
+            <p>新卒採用Blog</p>
+        </div>
+    </div>
+
+    <div class="row text-center">
+        <p>Copyright © 2015 Intelligence Business Solutions, Ltd. All rights reserved.</p>
+    </div>
+</footer>
+
+</html>

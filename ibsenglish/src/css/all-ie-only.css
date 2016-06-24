@@ -1,0 +1,125 @@
+/*common*/
+/*Set up font-family*/
+@font-face {
+    font-family: "Futura Font";
+    src: url('../Font/Futura/Futura-T-OT-Book_19064.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Avenir Font";
+    src: url('../Font/Avenir/Avenir-Book.ttf') format("truetype");
+}
+
+/*Font Regular*/
+@font-face {
+    font-family: "Regular Font";
+    src: url('../Font/Avenir/AvenirNext-Regular.ttf') format("truetype");
+}
+/*Font UltraLight*/
+@font-face {
+    font-family: "UltraLight Font";
+    src: url('../Font/Avenir/AvenirNext-UltraLight.ttf') format("truetype");
+}
+/*Font DemiBold*/
+@font-face {
+    font-family: "DemiBold Font";
+    src: url('../Font/Avenir/AvenirNext-DemiBold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "Futura Font";
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+/*-----------------------------common-----------------------------*/
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+body{
+
+}
+/*------------------------Our Service------------------------*/
+
+  div.imgIntro1:before{
+   content:url("../img/service1.jpg");
+  }
+   div.imgIntro2:before{
+    content: url("../img/service2.jpg");
+  }
+   div.imgIntro3:before{
+    content: url("../img/service3.jpg");
+  }
+   div.imgIntro4:before{
+    content: url("../img/service4.jpg");
+  }
+   div.imgIntro5:before{
+    content: url("../img/service5.jpg");
+  }
+  a.activatorService {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: rgb(255,255,255);
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 9px;
+    text-align: center;
+}
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name h3 {
+    color: white;
+    font-family: Futura Font;
+}
+/*Partnership section*/
+/*div.partnership1{
+  margin-top: 15%;
+}*/
+
+/*About us*/
+/*div.imgabout {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-image: url('../img/aboutus.jpg');
+    background-repeat: no-repeat;
+}*/
+/*banner*/
+/*div.banner{
+    padding-top: 50%;
+}*/

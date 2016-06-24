@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+/* common
+------------------------------------------------------------ */
+.content_body_wapper section h3 {
+	line-height: 1;
+	text-align: center;
+	color: #2F4982;
+	font-size: 30px;
+	padding: 10px 0 10px 0;
+	border-top: 1px solid #002166;
+	border-bottom: 1px solid #002166;
+	font-family: '游明朝', YuMincho, 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN W6', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;	
+}
+.content_body_wapper section ul {
+	padding: 0;
+	list-style-type: none;
+}
+.content_body_wapper section li {
+	margin: 0;
+}
+.content_body_wapper section li h4 {
+	font-weight: bold;
+	color: #0d1e58;
+	background-color: transparent;
+}
+.content_body_wapper section .btn,
+.content_body_wapper section .note {
+	text-align: center;
+	color: #3c3c3c;
+	background-color: transparent;
+}
+.content_body_wapper section .btn a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #49aabe;
+	box-shadow: inset 0 0 0 1px #fff;
+}
+
+/* ver PC size
+------------------------------------------------------------ */
+@media only screen and (min-device-width: 481px) {
+	
+	.heading {
+		background: url(../img/recruit/seminar_main.jpg) no-repeat;
+	}
+	.heading img {
+		visibility: hidden;
+	}
+	.content_body_wapper section {
+		margin: 20px 0;
+		line-height: 1.66;
+	}
+	.content_body_wapper section:last-of-type {
+		margin-bottom: 0;
+	}
+	.content_body_wapper section h3 {
+		margin-bottom: 30px;
+	}
+	.content_body_wapper section h3 img {
+		height: 49px;
+		width: atuo;
+	}
+	.content_body_wapper section .msg {
+		margin-bottom: 20px;
+		font-size: 117%;
+		line-height: 1.7;
+		text-align: center;
+	}
+	.content_body_wapper section ul {
+		margin: 0 0 30px;
+		line-height: 1.7;
+		background: url(../img/common/hr_section.png) repeat-x center top;
+	}
+	.content_body_wapper section li {
+		padding: 24px 40px 24px 0;
+		background: url(../img/common/hr_section.png) repeat-x center bottom;
+	}
+	.content_body_wapper section li h4 {
+		display: table-cell;
+		width: 240px;
+		padding: 0 30px 0 60px;
+		font-size: 117%;
+		vertical-align: middle;
+	}
+	.content_body_wapper section li h4 + * {
+		display: table-cell;
+	}
+	.content_body_wapper section .btn,
+	.content_body_wapper section .note {
+		margin-bottom: 30px;
+		font-size: 150%;
+	}
+	.content_body_wapper section .btn a {
+		display: inline-block;
+		min-width: 240px;
+		margin: 0 auto;
+		padding: 10px 24px;
+		border: 7px solid #49aabe;
+	}
+	.content_body_wapper .btn{
+		margin: auto;
+	}
+	.content_body_wapper #man_speech{
+		padding: 20px 0 20px 0px;
+		text-align:center;
+	}
+	.content_body_wapper #above_entry_text{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.content_body_wapper p{
+		font-size: 117%;
+	line-height: 1.7;
+	}
+	h4{
+		margin: 20px 0px 20px 0px;
+		color: #2F4982;
+		font-size: 30px;
+		font-family: 'HG明朝B', YuMincho, 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN W6', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+	}
+	a.button {
+    -moz-border-radius: 30px;
+  	-webkit-border-radius: 20px;
+  	border: 5px solid #E6B9B8;
+    background-color: #D99694;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    height: 90px;
+    font-size: 40px;
+	}
+}
+
+/* ver SP size
+------------------------------------------------------------ */
+@media only screen and (max-device-width: 480px) {
+	.content_body_wapper section {
+		line-height: 1.66;
+	}
+	.content_body_wapper section:last-of-type {
+		margin-bottom: -20px;
+	}
+	.content_body_wapper section h3 {
+		margin-bottom: 20px;
+	}
+	.content_body_wapper section h3 img {
+		height: 34px;
+		width: atuo;
+	}
+	.content_body_wapper section .msg {
+		margin: 0 10px 20px;
+		font-size: 1.4rem;
+		line-height: 1.5;
+	}
+	.content_body_wapper section .msg br {
+		display: none;
+	}
+	.content_body_wapper section ul {
+		margin: 0 0 20px;
+		line-height: 1.36;
+		background: url(../img/common/sp_hr_section.png) repeat-x center top;
+		background-size: auto 1px;
+	}
+	.content_body_wapper section li {
+		padding: 20px 10px;
+		background: url(../img/common/sp_hr_section.png) repeat-x center bottom;
+		background-size: auto 1px;
+	}
+	.content_body_wapper section li h4 {
+		margin-bottom: 0.6em;
+	}
+	.content_body_wapper section .btn,
+	.content_body_wapper section .note {
+		margin-bottom: 40px;
+		font-size: 1.6rem;
+	}
+	.content_body_wapper section .btn a {
+		display: block;
+		padding: 0.6em 0;
+		border: 4px solid #49aabe;
+	}
+	.content_body_wapper section .note {
+		display: none;
+	}
+	.content_body_wapper #man_speech{
+		padding: 20px 0 20px 0px;
+		text-align:center;
+	}
+	.content_body_wapper #above_entry_text{
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.content_body_wapper p{
+		font-size: 117%;
+		line-height: 1.7;
+	}
+	.content_body_wapper img {
+		width: 100%;
+		height:100%;
+	}
+	h4{
+		margin: 10px 0px 10px 0px;
+		color: #2F4982;
+		font-size: 20px;
+		font-family: 'HG明朝B', YuMincho, 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN W6', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+	}
+	.content_body_wapper #man_speech{
+		padding: 10px 0 10px 0px;
+		text-align:center;
+	}
+	.content_body_wapper #above_entry_text{
+		font-size: 10px;
+		font-weight: bold;
+		text-align: center;
+	}
+	a.button {
+    -moz-border-radius: 30px;
+  	-webkit-border-radius: 20px;
+  	border: 5px solid #E6B9B8;
+    background-color: #D99694;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    height: 90px;
+    font-size: 40px;
+	}
+}

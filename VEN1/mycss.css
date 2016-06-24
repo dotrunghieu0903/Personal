@@ -1,0 +1,548 @@
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+
+p {
+  font-size: 11px;
+  color: black;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.p1{
+	text-align: right;
+	font-size:36px;
+	color:white;
+}
+.p2{
+	text-align:left;
+	font-size:36px;
+	color:white;
+}
+
+/* ===== Google Map ============================== */
+
+#map{
+  height:380px;  
+  width:100%;  
+}
+
+div.gmnoprint, div.gm-style-cc {
+  display:none;
+}
+
+/* ===== Grid images ============================== */
+
+div.col-md-4.no-padding,
+div.col-md-12.no-padding {
+  padding-right: 1px;
+  padding-left: 1px; 
+  padding-top: 1px; 
+  padding-bottom: 1px; 
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 2px;
+  padding-left: 1.5px; 
+}
+
+@media all and (orientation:portrait) {
+  div.col-md-4.no-padding,
+  div.col-md-12.no-padding {
+    padding-right: 0.5px;
+    padding-left: 0.5px; 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+  }
+
+}
+
+
+@media all and (orientation:portrait) {
+  .row.padding-top {
+    padding-top: 1px;
+  }
+}
+
+/* ===== To the top button ============================== */
+
+.scroll-top-wrapper {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  text-align: center;
+  z-index: 99999999;
+  color: #eeeeee;
+  right: 30px;
+  bottom: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.scroll-top-wrapper:hover {
+  color: #777777;
+}
+
+.scroll-top-wrapper.show {
+  visibility:visible;
+  cursor:pointer;
+  opacity: 2.0;
+} 
+
+/* ===== Navbar ============================== */
+a.page-scroll { 
+ font-weight: bold;
+}
+
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 0;
+  font-size: 12px;
+  box-shadow: 1px 0.5px 10px #999999;
+}
+
+.navbar-nav>li:hover {
+  bottom: 0px;
+  border-bottom: 5px solid black;
+  margin-bottom: -5px;
+}
+
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover { 
+  bottom: 0px;
+  border-bottom: 5px solid black;
+  background-color: white;
+  margin-bottom: -5px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #555555;
+}
+
+a.btn-mypage { 
+  background-color:#37577D;
+}
+
+a.btn-mypage, a.btn-mypage:hover, a.btn-mypage:focus  { 
+  border-bottom: 0 !important;
+  margin-bottom: 0  !important;
+  width: 145px  !important;
+  background-color: #337ab7 !important;
+  border-radius: 3px !important;
+  line-height: 35px !important;
+  text-align: center !important; 
+  color: white !important;
+  margin-right: 15px !important;
+  padding: 0 !important;
+}
+
+li.btn-mypage, li.btn-mypage:hover, li.btn-mypage:active, li.btn-mypage:focus { 
+  border-bottom: 0px;
+  margin-top: 5px;
+  bottom: 0px;
+  border-bottom: 0;
+  margin-bottom: 0;
+  width: 145px;
+  border-radius: 3px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+  margin-right: 15px;
+  padding: 0;
+}
+
+/* Move content of navbar to center as design*/
+@media all and (min-width: 1140px) {
+  .navbar-header { 
+    margin-left: 10%;
+  }
+
+  .navbar-right {
+    margin-right: 10%;
+  }
+}
+
+@media all and (orientation:portrait) {
+
+  .navbar-nav>li:hover {
+    border-bottom: 0;
+    background-color: #eeeeee;
+  }
+
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover  {
+    bottom: 0px;
+    border-bottom: 0;
+    background-color: #eeeeee;
+    margin-bottom: 0;
+  }
+
+}
+
+/* ===== Banner ============================== */
+
+div.banner {
+  position: relative;
+  height: 400px;
+  background-size: cover;
+  background-image: url('../img/sky-scraper.jpg');
+  background-repeat: no-repeat;
+}
+
+div.banner-text { 
+  margin-left: 20%; 
+  margin-right: 20%; 
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 1140px) {
+  div.banner-text {
+    margin-left: 29.7%; 
+    margin-right: 29.7%; 
+  }
+}
+
+@media all and (orientation:portrait) {
+
+  div.banner-text { 
+    margin-left: 10%; 
+    margin-right: 10%; 
+  }
+}
+
+/* ===== Section info ============================== */
+
+p.message { 
+  margin-left: 20%;
+  margin-right: 20%;
+  color: #555555;
+  font-size: 12px;
+}
+
+@media (min-width: 1140px) {
+  p.message  {
+    margin-left: 29.7%;
+    margin-right: 29.7%;
+  }
+}
+
+@media all and (orientation:portrait) {
+
+  p.message  { 
+    margin-left: 10%; 
+    margin-right: 10%; 
+  }
+}
+
+
+/* ===== Staff Section ============================== */
+
+.footer_text h1 {
+  font-weight: bolder;
+  text-align: left;
+  font-size: 14px;
+  color: black;
+}
+
+.footer_text p {
+  font-size: 12px;
+  text-align: left;
+} 
+
+.footer_text {
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.side_photo{
+  width: 165px;
+  height: 165px;
+  padding: 18px;
+  border-radius: 50%;
+  float: left;
+}
+
+.mytext{
+  float: left;
+}
+
+.mytext p{
+  font-size: 11px;
+  width: auto;
+  margin-left: 20px;
+  text-align: left;
+}
+
+div.container.staff > div.row.staff {
+  margin-right: 10%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+@media all and (orientation:portrait) {
+
+  div.container.staff > div.row.staff {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}
+
+/* ===== ====== ============================== */
+@media (min-width: 992px){
+ .col-md-4 {
+  padding-left:0px;
+  padding-right:1px;
+  padding-top: 1px;
+}
+}
+
+#test {
+  position: absolute;
+  /* top: 0; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 35%;
+  height: 30%;
+  margin: auto;
+  text-align: center !important;
+  font-size: 1.5vw;
+  background-color: #B3D1FF;
+}
+
+#wrapper { 
+  position: relative;
+}
+
+#test_title {
+  text-align: center !important;
+  font-size: 10px;
+  color: #797979;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+td#test1 > a{
+	color: #555555;
+	font-size:13px;
+  font-weight: bolder;
+  padding-right: 10px;
+}
+
+.div-seperator { 
+  margin-top: 20px;
+}
+
+
+h1.section-heading {  
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.container.staff{ 
+  width: 100% !important;
+  position: relative;
+  background-size: cover;
+  background-image: url('../img/white-pattern.jpg');
+  background-repeat: no-repeat;
+}
+
+div.text_info {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+div.text_staff {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+div.col-md-3.col-lg-3.center { 
+  display: inline-block;
+  float: none;
+  width: 30%;
+}
+
+@media (max-width: 580px) {
+  div.col-md-3.col-lg-3.center { 
+    display: inline;
+    float: none;
+    width: 30%;
+  }
+}
+
+
+/* ===== Our Work Section ============================== */
+.portfolio-box {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.portfolio-box img{
+  width: 100%;
+}
+
+.portfolio-box .portfolio-box-caption {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgb(255,255,255);
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: #37577D;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateY(-50%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  padding: 0 15px;
+  /*font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;*/
+  font-family: "Arial";
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  font-size: 9px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.portfolio-box:hover .portfolio-box-caption .portfolio-box-caption-content {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.btn-entry2{
+  width: 32%;
+  height: 50px;
+  font-size: 2vw;
+  line-height: 37px;
+  outline: none;
+  color: white;
+  border: 1px rgb(219, 214, 214);
+  background-color: #1B5CA9;
+  text-align: center;
+  padding: 0;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+/* ===================================================== */
+
+@media (max-width: 945px) {
+
+  .footer_text {
+    top: 0%; 
+    transform: translateY(0%);
+  }
+
+  .footer_text h1{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .footer_text p{
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .side_photo{
+    width: 165px;
+    height: 165px;
+    padding: 18px;
+    border-radius: 50%;
+    float: none;
+  }
+
+  .mytext{
+    float: none;
+  }
+
+  .mytext p{
+    font-size: 11px;
+    width: auto;
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  .portfolio-box img {
+    margin-bottom: 0.5%; 
+  }
+}
+
+@media (max-width: 991px) {
+ .portfolio-box img {
+  margin-bottom: 0.5%; 
+}
+
+/* ========================= */
+@media (min-width: 1140px) {
+  .container {
+    width: 1140px !important; 
+  }
+
+  div.navbar-header { 
+    margin-left: 10%;
+  }
+  div#myNavbar.collapse.navbar-collapse {
+    margin-right: 10%;
+
+  }
+}
+/* div#preload{
+	background: url(../img/sky-scraper.jpg) no-repeat;
+	display:none;
+} */
+/* div#preloaded-images {
+   position: absolute;
+   overflow: hidden;
+   left: -9999px; 
+   top: -9999px;
+   height: 100px;
+   width: 100px;
+} */

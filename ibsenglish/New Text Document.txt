@@ -1,0 +1,59 @@
+/*     div.imgIntro1{
+      position: relative;
+    }
+     div.imgIntro2{
+      position: relative;
+    }
+     div.imgIntro3{
+      position: relative;
+    }
+     div.imgIntro4{
+      position: relative;
+    }
+     div.imgIntro5{
+      position: relative;
+    }
+    div.imgIntro1:before{
+      position: relative;
+     content:url("../img/service1.jpg");
+    }
+     div.imgIntro2:before{
+      position: relative;
+      content: url("../img/service2.jpg");
+    }
+     div.imgIntro3:before{
+      position: relative;
+      content: url("../img/service3.jpg");
+    }
+     div.imgIntro4:before{
+      position: relative;
+      content: url("../img/service4.jpg");
+    }
+     div.imgIntro5:before{
+      position: relative;
+      content: url("../img/service5.jpg");
+    }*/
+@font-face {
+    font-family: "Futura Font";
+    src: url('../Font/Futura/Futura-T-OT-Book_19064.ttf') format("truetype");
+}
+@font-face {
+    font-family: "Avenir Font";
+    src: url('../Font/Avenir/Avenir-Book.ttf') format("truetype");
+}
+
+/*Font Regular*/
+@font-face {
+    font-family: "Regular Font";
+    src: url('../Font/Avenir/AvenirNext-Regular.ttf') format("truetype");
+}
+/*Font UltraLight*/
+@font-face {
+    font-family: "UltraLight Font";
+    src: url('../Font/Avenir/AvenirNext-UltraLight.ttf') format("truetype");
+}
+/*Font DemiBold*/
+@font-face {
+    font-family: "DemiBold Font";
+    src: url('../Font/Avenir/AvenirNext-DemiBold.ttf') format("truetype");
+}

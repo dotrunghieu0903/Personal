@@ -1,0 +1,18 @@
+http://10.108.17.45/IBSV/IBS-Fresh-Graduates.git
+
+git config --global http.postBuffer 524288000
+
+192.168.1.221
+
+Duyen Hang 10:22 AM
+git@10.108.17.45:hang.kim.duyen/IBS-Fresh-Graduates-New.git
+Phu Le 10:22 AM
+thanks em
+Duyen Hang 10:23 AM
+http://10.108.17.45/hang.kim.duyen/IBS-Fresh-Graduates-New.git
+
+\\ds.inte.co.jp\IBS\IBS_Vietnam\03_PJT\125_IBSV-IBSRecruiting
+
+http://ibsv.vn/IBSFreshWeb/introduce/index.html
+
+http://www.ibs.inte.co.jp/fresh/introduce/01.html
